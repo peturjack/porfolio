@@ -1,14 +1,16 @@
 import React from "react";
 import About from "./components/About";
 import Hero from "./components/Hero";
-import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Project from "./components/Project";
 
 const page = () => {
   return (
     <>
       <Hero />
       <About />
-      <Projects />
+      <Skills />
+      <Project />
     </>
   );
 };

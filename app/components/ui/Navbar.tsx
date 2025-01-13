@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-
+import { navLinks } from "@/app/utils/content";
 const Navbar = () => {
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -26,24 +26,6 @@ const Navbar = () => {
     };
   }, [lastScrollY]);
 
-  const navLinks = [
-    {
-      name: "Home",
-      href: "#/",
-    },
-    {
-      name: "About",
-      href: "#about",
-    },
-    {
-      name: "Projects",
-      href: "#projects",
-    },
-    {
-      name: "Contact",
-      href: "#contacts",
-    },
-  ];
   return (
     <>
       {showNav && (

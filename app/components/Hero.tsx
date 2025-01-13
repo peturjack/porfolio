@@ -5,7 +5,11 @@ import { motion } from "motion/react";
 const Hero = () => {
   return (
     <>
-      <main className="bg-gradient-to-r from-slate-900 to-slate-700 text-white min-h-screen text-center flex items-center justify-center w-full overflow-hidden">
+      <main
+        className="bg-gradient-to-r from-slate-900 to-slate-700
+       text-white min-h-screen text-center flex items-center justify-center
+        w-full overflow-hidden"
+      >
         <motion.section
           initial={{
             opacity: 0,
