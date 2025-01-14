@@ -44,7 +44,7 @@ const About = () => {
             }}
             className="md:w-1/2 md:pl-8"
           >
-            <Text>About Me</Text>
+            <Text type="h2">About Me</Text>
             <p className="text-lg mb-6">
               I'm a passionate frontend developer with a keen eye for design and
               a love for creating intuitive, user-friendly web experiences. I

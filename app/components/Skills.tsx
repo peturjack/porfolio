@@ -12,7 +12,9 @@ const Skills = () => {
       className="bg-gradient-to-r from-slate-900 to-slate-700"
     >
       <ContainerBox>
-        <Text className="text-white ">Skills</Text>
+        <Text type="h2" className="text-white ">
+          Skills
+        </Text>
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, y: 100 }}

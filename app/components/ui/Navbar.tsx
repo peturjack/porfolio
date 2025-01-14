@@ -34,7 +34,11 @@ const Navbar = () => {
             <ul className="space-x-4 w-[900] rounded-full text-white text-xl p-6 shadow-lg bg-orange-500 flex justify-center mx-auto ">
               {navLinks.map((navLink, index) => {
                 return (
-                  <Link key={index} href={navLink.href}>
+                  <Link
+                    className="hover:text-slate-900 duration-200"
+                    key={index}
+                    href={navLink.href}
+                  >
                     {navLink.name}
                   </Link>
                 );

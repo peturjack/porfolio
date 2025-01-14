@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "motion/react";
+import Text from "./typography/Text";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -22,19 +24,23 @@ const Hero = () => {
           }}
           className="space-y-4 "
         >
-          <h1 className="text-7xl">Pétur Hilmarsson</h1>
-          <h2 className=" text-4xl">Frontend Developer</h2>
-          <p className="w-[500] mx-auto text-xl">
+          <Text type="h1">Pétur Hilmarsson</Text>
+          <Text type="h2">Frontend Developer</Text>
+          <Text className="w-[500] mx-auto text-xl">
             Crafting beautiful and performant web experiences with modern
             technologies
-          </p>
+          </Text>
           <div className="flex justify-center gap-4">
-            <button className="bg-orange-500/20 border-2 border-orange-500 py-2 px-4 rounded">
-              Get in Touch
-            </button>
-            <button className=" border-2 border-orange-500 py-2 px-4 rounded">
-              View Projects
-            </button>
+            <Link href={"#contacts"}>
+              <button className="bg-orange-500/20 border-2 border-orange-500 py-2 px-4 rounded hover:scale-105 duration-200">
+                Get in Touch
+              </button>
+            </Link>
+            <Link href={"#projects"}>
+              <button className=" border-2 border-orange-500 py-2 px-4 rounded hover:scale-105 duration-200">
+                View Projects
+              </button>
+            </Link>
           </div>
         </motion.section>
       </main>
