@@ -45,17 +45,17 @@ const About = () => {
             className="md:w-1/2 md:pl-8"
           >
             <Text type="h2">About Me</Text>
-            <p className="text-lg mb-6">
+            <Text className="leading-relaxed mb-6">
               I'm a passionate frontend developer with a keen eye for design and
               a love for creating intuitive, user-friendly web experiences. I
               specialize in building responsive and performant web applications
               using modern technologies like React, Next.js, and Tailwind CSS.
-            </p>
+            </Text>
             <motion.p
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0, transition: { duration: 0.7 } }}
               viewport={{ once: true }}
-              className="text-lg mb-6"
+              className="leading-relaxed text-base md:text-xl mb-6"
             >
               My journey in web development started with a fascination for how
               things work on the internet. This curiosity led me to dive deep
@@ -66,7 +66,7 @@ const About = () => {
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0, transition: { duration: 0.7 } }}
               viewport={{ once: true }}
-              className="text-lg"
+              className="leading-relaxed text-base md:text-xl"
             >
               When I'm not coding, you can find me exploring new web
               technologies, I'm always excited to take on new challenges and
